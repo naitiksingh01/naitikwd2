@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Feedback Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 350px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .rating-group {
+            margin-bottom: 15px;
+        }
+
+        .rating-group input {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #ea4504;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4bb300;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Online Feedback Form</h2>
+
+        <form action="#" method="post">
+
+   
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+     
+            <label>Rating:</label>
+            <div class="rating-group">
+                <input type="radio" name="rating" value="1" required>1
+                <input type="radio" name="rating" value="2">2
+                <input type="radio" name="rating" value="3">3
+                <input type="radio" name="rating" value="4">4
+                <input type="radio" name="rating" value="5">5
+            </div>
+
+            
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+
+
+            <input type="submit" value="Submit Feedback">
+
+        </form>
+    </div>
+
+</body>
+</html>
